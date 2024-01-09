@@ -21,7 +21,13 @@
 
 An Ansible playbook to deploy and configure a Nexus Repository server on your hosts.
 
+This Ansible playbook offers a streamlined and automated approach to deploying and managing artefacts, highlighting Nexus Repository as a user-friendly interface. The inclusion of an Ansible playbook simplifies the entire process, from installing Docker to advanced configuration of Nexus Repository, and optionally, setting up Apache2 as a local reverse proxy. This advanced Apache2 configuration provides features such as SSL, Authentication, LDAP, Quality of Service (QOS), and a web application firewall (WAF). By combining these elements, this Ansible playbook aims to streamline artefacts management while ensuring a high level of security and compliance with best practices.
+
 ## Deployment diagramm
+
+![](./assets/Ansible-Playbook-Labocbz-Deploy-Nexus-Repository.drawio.svg)
+
+Here is a potential deployment scenario using the playbook. We can observe that Nexus Repository is installed on the same host as Apache2, which then functions as an SSL/TLS reverse proxy, WAF, QoS, Auth, etc. You can proxy your repositories, like Docker or NPM, etc.
 
 ## Tests and simulations
 
