@@ -25,4 +25,4 @@
 
 - name: "labocbz.install_nexus_repository"
   src: "https://github.com/CBZ-D-velop/Ansible-Role-Labocbz-Install-Nexus-Repository.git"
-  version: "develop"
+  version: "1.0"
