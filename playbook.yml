@@ -66,7 +66,7 @@
           ansible.builtin.include_role:
             name: "labocbz.install_docker"
 
-    - name: "Install Docker and Portainer"
+    - name: "Install Nexus Repository"
       when: inv_install_nexus_repository | default(false)
       block:
         - name: "Include labocbz.install_nexus_repository"
