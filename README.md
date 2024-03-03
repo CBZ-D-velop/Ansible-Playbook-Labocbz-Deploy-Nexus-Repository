@@ -101,6 +101,12 @@ Here you can put your change to keep a trace of your work and decisions.
 
 * First init of this playbook with the bootstrap_playbook playbook by Lord Robin Crombez
 
+### 2024-03-02: Fix and CI
+
+* Added support for new CI base
+* Edit all vars with __
+* Tested and validated on Docker
+
 ## Authors
 
 * Lord Robin Crombez
