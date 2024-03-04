@@ -173,5 +173,5 @@
           retries: 10
           delay: 10
           ansible.builtin.uri:
-            url: "http://{{ inventory_hostname }}:{{ inv_install_nexus_repository__web_port }}/"
+            url: "http://localhost:{{ inv_install_nexus_repository__web_port }}/"
             method: "GET"
