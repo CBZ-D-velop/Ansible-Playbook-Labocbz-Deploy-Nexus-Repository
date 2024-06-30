@@ -1,7 +1,0 @@
----
-- name: "Include labocbz.deploy_nexus_repository playbook"
-  tags:
-      - "labocbz.deploy_nexus_repository"
-  vars:
-    tower_env: "cicd-debian-11"
-  ansible.builtin.import_playbook: "../../playbook.yml"

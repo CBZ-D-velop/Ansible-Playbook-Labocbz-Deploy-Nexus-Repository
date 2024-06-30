@@ -25,7 +25,7 @@ This Ansible playbook offers a streamlined and automated approach to deploying a
 
 ## Deployment diagramm
 
-![](./assets/Ansible-Playbook-Labocbz-Deploy-Nexus-Repository.drawio.svg)
+![Ansible-Playbook-Labocbz-Deploy-Nexus-Repository](./assets/Ansible-Playbook-Labocbz-Deploy-Nexus-Repository.drawio.svg)
 
 Here is a potential deployment scenario using the playbook. We can observe that Nexus Repository is installed on the same host as Apache2, which then functions as an SSL/TLS reverse proxy, WAF, QoS, Auth, etc. You can proxy your repositories, like Docker or NPM, etc.
 
@@ -36,7 +36,6 @@ Here is a potential deployment scenario using the playbook. We can observe that 
 You have to run multiples tests. *tests with an # are mandatory*
 
 ```MARKDOWN
-# lint
 # syntax
 # converge
 # idempotence
@@ -61,7 +60,6 @@ yamllint -c ./.yamllint .
 ansible-lint --config=./.ansible-lint .
 
 # Execute and test your playbook
-molecule lint
 molecule create
 molecule list
 molecule converge
@@ -109,6 +107,14 @@ Here you can put your change to keep a trace of your work and decisions.
 * Added support for Debian 11/12
 * Added support for Unbuntu 22
 * Docker based installation, custom user handled
+
+### 2024-05-19: New CI
+
+* Added Markdown lint to the CICD
+* Rework all Docker images
+* Change CICD vars convention
+* New workers
+* Removed all automation based on branch
 
 ## Authors
 
